@@ -1,0 +1,38 @@
+/* common styles*/
+/* Global Styles */
+*{outline:none}
+/* .row > *{width: unset !important;flex-shrink: unset;} */
+.imgbox img{height:212px;width:100%}
+body{overflow:hidden;font-size:0.80rem !important; font-family: 'Georgia' !important;font-weight: 600 !important;color: #000 !important; }
+html,body{height:100%;margin:0;padding:0;}
+
+img[src=""],
+img:not([src]) {opacity: 0;}
+img[src="*"] {opacity: 1;}
+
+a{display:inline-block!important;text-decoration:none !important;white-space:nowrap}
+p{color:#000 !important; font-weight: 600;}
+a:hover{text-decoration:underline}
+ul,ol{margin:0!important;padding:0!important;list-style-type:none}
+th, td {padding: 3px;}
+span{display:inline-block}
+figure{margin:0!important}
+.light-logo{display: none;}
+.flex_wrap{display:flex;align-items:center;justify-content:center;}
+.flex_wrap.space_between{justify-content:space-between;}
+.flex_wrap{display:flex;align-items:center;justify-content:center;}
+.flex_wrap.space_between{justify-content:space-between;}
+.table_wrap{display:table;width:100%;}
+.table_wrap aside{display:table-cell; float: none; table-layout: fixed;}
+
+
+.bodyinfo{ height: calc( 100vh - 107px );}
+
+/* Splitpane Styles */
+/* .bodyinfo .splitpanes--vertical .splitpanes__pane{transition:none !important} */
+.splitpanes.default-theme .splitpanes__pane.tre_pane.hide_tree{width:0 !important;}
+.splitpanes.default-theme .splitpanes__pane.right_pane.hide_tree{width:100% !important;}
+.splitpanes.default-theme .splitpanes__pane.tre_pane.hide_tree .scrollbar-track {display: none !important;}
+.show_filter .hide_tree .tree_filter{display: none;}
+
+.user_dropdown ul.dropdown-menu{ right: 0; left: auto;}

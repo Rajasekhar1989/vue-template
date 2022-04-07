@@ -5,11 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    showFilter: false,
+    hide_tree: false,
   },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
 })
