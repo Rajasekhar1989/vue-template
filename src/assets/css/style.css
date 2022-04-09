@@ -36,3 +36,49 @@ figure{margin:0!important}
 .show_filter .hide_tree .tree_filter{display: none;}
 
 .user_dropdown ul.dropdown-menu{ right: 0; left: auto;}
+
+.register,
+.login,
+.update,
+.add-detail,
+.container {
+  text-align: center;
+}
+.register button,
+.login button,
+.update button,
+.add-detail button {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto 15px auto;
+}
+.register input,
+.login input,
+.add input {
+  width: 300px;
+  height: 40px;
+  padding-left: 20px;
+  display: block;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  border: 1px solid grey;
+}
+.register button,
+.login button,
+.add button {
+  width: 320px;
+  height: 40px;
+  border: 1px solid grey;
+  background: skyblue;
+  color: #000;
+  cursor: pointer;
+}
+
+.btn{display: grid;margin: auto;}
+input{width: 80px;}
+
+
+
+
+

@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "SignUpName": "a",
+      "SignUpEmail": "a",
+      "SignUpPassword": "a",
+      "id": 3
+    },
+    {
+      "SignUpName": "asd",
+      "SignUpEmail": "asd",
+      "SignUpPassword": "asd",
+      "id": 4
+    },
+    {
+      "SignUpName": "suresh",
+      "SignUpEmail": "suresh@gmail.com",
+      "SignUpPassword": "suresh@7989",
+      "id": 5
+    },
+    {
+      "SignUpName": "gouri",
+      "SignUpEmail": "gouri",
+      "SignUpPassword": "gouri",
+      "id": 6
+    }
+  ]
+}
