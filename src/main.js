@@ -19,6 +19,17 @@ import '../node_modules/splitpanes/dist/splitpanes.css'
 Vue.component('split-pane', Splitpanes);
 Vue.component('pane', Pane);
 
+/* ION Range Slider */
+import rangeSlider from '../node_modules/ion-rangeslider/js/ion.rangeSlider.js'
+import rangeSlidercss from '../node_modules/ion-rangeslider/css/ion.rangeSlider.css'
+Vue.use(rangeSlider, rangeSlidercss);
+
+/* Vue Toggle Button */
+import ToggleButton from 'vue-js-toggle-button'
+Vue.use(ToggleButton);
+
+export const eventBus = new Vue();
+
 Vue.config.productionTip = false
 
 new Vue({
