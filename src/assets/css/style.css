@@ -29,7 +29,7 @@ figure{margin:0!important}
 .bodyinfo{ height: calc( 100vh - 107px );}
 
 /* Splitpane Styles */
-/* .bodyinfo .splitpanes--vertical .splitpanes__pane{transition:none !important} */
+.bodyinfo .splitpanes--vertical .splitpanes__pane{transition:none !important}
 .splitpanes.default-theme .splitpanes__pane.tre_pane.hide_tree{width:0 !important;}
 .splitpanes.default-theme .splitpanes__pane.right_pane.hide_tree{width:100% !important;}
 .splitpanes.default-theme .splitpanes__pane.tre_pane.hide_tree .scrollbar-track {display: none !important;}
