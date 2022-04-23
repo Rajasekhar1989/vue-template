@@ -4,6 +4,7 @@ import Login from '../components/Login.vue'
 import Signup from '../components/SignUp.vue'
 import Dashboard from '../components/Dashboard.vue'
 import Controls from '../components/Controls.vue'
+import FormController from '../components/FormControllers.vue'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/controls',
     name: 'Controls',
     component: Controls
+  },
+  {
+    path: '/formcontrollers',
+    name: 'FormController',
+    component: FormController
   },
 ]
 

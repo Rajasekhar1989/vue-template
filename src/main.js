@@ -6,8 +6,15 @@ import store from './store'
 /* Bootstrap Integration */
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.js'
+
+/* BootstrapVue Integration */
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-import 'bootstrap-vue/node_modules/bootstrap/dist/css/bootstrap.min.css'
+Vue.use(BootstrapVue)
+Vue.use(IconsPlugin)
+
+/* For Icons */
 import 'boxicons';
 
 /* Custom Styles */
@@ -27,6 +34,11 @@ Vue.use(rangeSlider, rangeSlidercss);
 /* Vue Toggle Button */
 import ToggleButton from 'vue-js-toggle-button'
 Vue.use(ToggleButton);
+
+/* DateTimePicker */
+import DatePicker from 'vue2-datepicker';
+import 'vue2-datepicker/index.css';
+Vue.use(DatePicker)
 
 export const eventBus = new Vue();
 

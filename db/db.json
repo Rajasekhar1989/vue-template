@@ -23,6 +23,12 @@
       "SignUpEmail": "gouri",
       "SignUpPassword": "gouri",
       "id": 6
+    },
+    {
+      "SignUpName": "shekar",
+      "SignUpEmail": "shekar@gmail.com",
+      "SignUpPassword": "shekar",
+      "id": 7
     }
   ]
 }

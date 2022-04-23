@@ -8,7 +8,7 @@
 
 <script>
 import $ from "jquery";
-import { eventBus } from "../main";
+import { eventBus } from "../../main";
 export default {
   name: "RangeSilder",
 
