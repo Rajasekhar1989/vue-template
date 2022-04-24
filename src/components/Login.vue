@@ -1,11 +1,27 @@
-<template>
-  <div class="row">    
-    <div class="login col-lg-6">
-      <h1>Login</h1>
-      <input type="text" v-model="loginEmail" placeholder="Enter Email" />
-      <input type="password" v-model="loginPassword" placeholder="Enter Password" />
-      <button v-on:click="login">Login</button>
-    </div>
+<template>  
+  <div class="flex_wrap" style="height:100vh">
+    <div class="login clearfix">
+      <figure>
+        <img :src="userIcon" alt="">
+      </figure>
+      <h4>Login to Your Account</h4>      
+      <div class="form-group">
+        <input type="text" class="form-control formInput"  />
+        <label for="name" class="formLabel">Name</label>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control formInput" v-model="loginEmail" />
+        <label for="name" class="formLabel">Email</label>
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control formInput" v-model="loginPassword" />
+        <label for="name" class="formLabel">Password</label>
+      </div>
+      <div class="formSubmit">
+        <button v-on:click="login" class="btn btn-info float-end">Login</button>
+        <span>New User ? <router-link to="/sign-up">Create an Account</router-link></span>
+      </div>      
+    </div>  
   </div>
 </template>
 <script>
@@ -16,8 +32,9 @@ export default {
     {
       return {
         isLogin:true,
-        loginEmail: "a",
-        loginPassword: "a",    
+        loginEmail: "",
+        loginPassword: "",    
+        userIcon:require("../assets/images/user.png")
       };
     }
   },
