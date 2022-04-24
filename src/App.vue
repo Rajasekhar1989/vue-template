@@ -5,6 +5,7 @@
         <router-link to="/login">Login</router-link> |
         <router-link to="/sign-up">SignUp</router-link>
       </div>
+      <p class="text-center main_header">Welcome to Vue Sample Template</p>
       <router-view/>
     </div>    
     <div v-if="this.username!=''">
@@ -30,3 +31,10 @@ export default {
   }
 }
 </script>
+<style scoped>
+.main_header{
+  /* color: rgb(248, 68, 96) !important; */
+  color: #0b1665 !important;
+  font-size: 25px;
+}
+</style>
