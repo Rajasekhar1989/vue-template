@@ -1,12 +1,26 @@
 
 <template>
-    <div class="register col-lg-6"  >
-        <h1>SignUp</h1>
-        <input type="text" v-model="SignUpName" placeholder="Enter Name" />
-        <input type="text" v-model="SignUpEmail" placeholder="Enter Email" />
-        <input type="password" v-model="SignUpPassword" placeholder="Enter Password" />
-        <button v-on:click="signUp">Sign Up</button>
+<div class="flex_wrap" style="height:100vh">
+    <div class="login register">
+        <h4>SignUp</h4>        
+        <div class="form-group">
+          <input type="text" class="form-control formInput" v-model="SignUpName" />
+          <label for="name" class="formLabel">Name</label>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control formInput" v-model="SignUpEmail" />
+          <label for="name" class="formLabel">Email</label>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control formInput" v-model="SignUpPassword"/>
+          <label for="name" class="formLabel">Password</label>
+        </div>
+        <div class="formSubmit">
+          <button v-on:click="signUp" class="btn btn-info float-end">Sign Up</button>
+          <span>Click here to <router-link to="/login">Login</router-link></span>
+        </div>
     </div>
+</div>
 </template>
 <script>
 import axios from "axios";
