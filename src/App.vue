@@ -1,11 +1,10 @@
 <template>
-  <div>
+  <div class="main">
     <div v-if="this.username==''">
-      <div class="text-center">
+      <div class="navLink text-center">
         <router-link to="/login">Login</router-link> |
         <router-link to="/sign-up">SignUp</router-link>
-      </div>
-      <p class="text-center main_header">Welcome to Vue Sample Template</p>
+      </div>      
       <router-view/>
     </div>    
     <div v-if="this.username!=''">
