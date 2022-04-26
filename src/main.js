@@ -40,6 +40,11 @@ import DatePicker from 'vue2-datepicker';
 import 'vue2-datepicker/index.css';
 Vue.use(DatePicker)
 
+/* Charts */
+import VueApexCharts from 'vue-apexcharts';
+Vue.use(VueApexCharts);
+Vue.component('apexchart', VueApexCharts);
+
 export const eventBus = new Vue();
 
 Vue.config.productionTip = false

@@ -5,6 +5,7 @@ import Signup from '../components/SignUp.vue'
 import Dashboard from '../components/Dashboard.vue'
 import Controls from '../components/Controls.vue'
 import FormController from '../components/FormControllers.vue'
+import Graphs from '../components/Graph.vue'
 
 Vue.use(VueRouter)
 
@@ -20,7 +21,7 @@ const routes = [
     component: Signup
   },
   {
-    path: '/dashboard',
+    path: '/',
     name: 'Dashboard',
     component: Dashboard
   },
@@ -33,6 +34,11 @@ const routes = [
     path: '/formcontrollers',
     name: 'FormController',
     component: FormController
+  },
+  {
+    path: '/graphs',
+    name: 'Graphs',
+    component: Graphs
   },
 ]
 

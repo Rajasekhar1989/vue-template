@@ -1,10 +1,6 @@
 <template>
   <div class="main">
-    <div v-if="this.username==''">
-      <div class="navLink text-center">
-        <router-link to="/login">Login</router-link> |
-        <router-link to="/sign-up">SignUp</router-link>
-      </div>      
+    <div v-if="this.username==''">     
       <router-view/>
     </div>    
     <div v-if="this.username!=''">

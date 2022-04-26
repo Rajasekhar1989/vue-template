@@ -2,13 +2,13 @@
   <div class="flex_wrap" style="height:100vh">
     <div class="login clearfix">
       <figure>
-        <img :src="userIcon" alt="">
+        <img src="https://i.postimg.cc/MHKKtKgy/a.png" alt="">
       </figure>
       <h4>Login to Your Account</h4>      
-      <div class="form-group">
+      <!-- <div class="form-group">
         <input type="text" class="form-control formInput"  />
         <label for="name" class="formLabel">Name</label>
-      </div>
+      </div> -->
       <div class="form-group">
         <input type="text" class="form-control formInput" v-model="loginEmail" />
         <label for="name" class="formLabel">Email</label>
@@ -34,7 +34,7 @@ export default {
         isLogin:true,
         loginEmail: "",
         loginPassword: "",    
-        userIcon:require("../assets/images/user.png")
+        //userIcon:require("../assets/images/user.png")
       };
     }
   },
