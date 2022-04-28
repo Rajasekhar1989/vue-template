@@ -13,6 +13,9 @@
             <a class="nav-link" href="/formcontrollers"> Form Controls </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="/tree"> Tree </a>
+          </li> 
+          <li class="nav-item">
             <a class="nav-link" href="/graphs"> Charts </a>
           </li>      
         </ul>

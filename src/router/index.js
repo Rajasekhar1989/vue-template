@@ -5,7 +5,9 @@ import Signup from '../components/SignUp.vue'
 import Dashboard from '../components/Dashboard.vue'
 import Controls from '../components/Controls.vue'
 import FormController from '../components/FormControllers.vue'
+import Tree from '../components/TreeView.vue'
 import Graphs from '../components/Graph.vue'
+
 
 Vue.use(VueRouter)
 
@@ -34,6 +36,11 @@ const routes = [
     path: '/formcontrollers',
     name: 'FormController',
     component: FormController
+  },
+  {
+    path: '/tree',
+    name: 'TreeView',
+    component: Tree
   },
   {
     path: '/graphs',

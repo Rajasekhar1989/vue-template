@@ -40,6 +40,10 @@ import DatePicker from 'vue2-datepicker';
 import 'vue2-datepicker/index.css';
 Vue.use(DatePicker)
 
+/* Tree */
+import LiquorTree from 'liquor-tree'
+Vue.use(LiquorTree)
+
 /* Charts */
 import VueApexCharts from 'vue-apexcharts';
 Vue.use(VueApexCharts);

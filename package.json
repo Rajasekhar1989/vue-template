@@ -15,6 +15,7 @@
     "boxicons": "^2.1.2",
     "core-js": "^3.6.5",
     "ion-rangeslider": "^2.3.1",
+    "liquor-tree": "^0.2.70",
     "moment": "^2.29.3",
     "splitpanes": "^2.4.1",
     "vue": "^2.6.14",

@@ -27,7 +27,7 @@ export default {
           xaxis: {
             categories: ["Major", "Minor"],   
           },
-          colors :[ '#000', '#f3f321' ], // Serires Colors should be hashcode only to apply both labels and Bars       
+          colors :[ '#34a195', '#dc3545' ], // Serires Colors should be hashcode only to apply both labels and Bars       
         },
         series: 
         [
