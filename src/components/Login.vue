@@ -1,31 +1,46 @@
-<template>  
-  <div class="flex_wrap" style="height:100vh">
-    <div class="login clearfix">
-      <figure>
-        <img src="https://i.postimg.cc/MHKKtKgy/a.png" alt="">
-      </figure>
-      <h4>Login to Your Account</h4>      
-      <!-- <div class="form-group">
-        <input type="text" class="form-control formInput"  />
-        <label for="name" class="formLabel">Name</label>
-      </div> -->
-      <div class="form-group">
-        <input type="text" class="form-control formInput" v-model="loginEmail" />
-        <label for="name" class="formLabel">Email</label>
+<template>
+  <div class="user_log">
+    <div class="main-wrap">
+      <div class="row h-100" >
+      <aside class="col-sm-6 login clearfix">
+        <div class="login-inner">
+          <figure>
+              <img :src="$store.state.themeLogo" alt="">
+          </figure>
+          <h5>Login</h5>
+          <div class="form-group">        
+            <label for="name" class="formLabel">Name</label>
+            <input type="text" class="form-control formInput" />
+          </div>
+          <div class="form-group">        
+            <label for="name" class="formLabel">Email</label>
+            <input type="text" class="form-control formInput" v-model="loginEmail" />
+          </div>
+          <div class="form-group">        
+            <label for="name" class="formLabel">Password</label>
+            <input type="password" class="form-control formInput" v-model="loginPassword" />
+          </div>
+          <div class="form-group formSubmit d-flex justify-content-between align-items-center">        
+            <span>New User ? <router-link to="/sign-up">Create an Account</router-link></span>
+            <button v-on:click="login" class="btn btn-primary"><box-icon name='log-in' type="regular" ></box-icon> Login</button>
+          </div>      
+        </div>
+      </aside>  
+      <aside class="login-info col-sm-6">
+        <div class="login-info-inner">
+          <h3>Welcome to <span>Dashboard Theme </span></h3>
+          <p>Login To Access Dashboard</p>
+
+        </div>
+      </aside>
       </div>
-      <div class="form-group">
-        <input type="password" class="form-control formInput" v-model="loginPassword" />
-        <label for="name" class="formLabel">Password</label>
-      </div>
-      <div class="formSubmit">
-        <button v-on:click="login" class="btn btn-info float-end">Login</button>
-        <span>New User ? <router-link to="/sign-up">Create an Account</router-link></span>
-      </div>      
-    </div>  
+
+    </div>
   </div>
 </template>
 <script>
 import axios from "axios";
+import $ from 'jquery';
 export default {
   name: "Login",
   data() {
@@ -34,9 +49,24 @@ export default {
         isLogin:true,
         loginEmail: "",
         loginPassword: "",    
-        //userIcon:require("../assets/images/user.png")
+        themeLogo:require("../assets/images/slack.png")
       };
     }
+  },
+  mounted(){
+    $('input, .form-group').focus(function(){
+        $(this).parents('.form-group').addClass('focused');
+      });
+  
+      $('input').blur(function(){
+        var inputValue = $(this).val();
+        if ( inputValue == "" ) {
+          $(this).removeClass('filled');
+          $(this).parents('.form-group').removeClass('focused');  
+        } else {
+          $(this).addClass('filled');
+        }
+      })
   },
   methods: {
     async login() {
