@@ -1,15 +1,24 @@
 <template>
-  <div class="main">
-    <div v-if="this.username==''">     
+  <div>
+  <div>
+    <div v-if="this.username==''">
+      <!-- <div class="navLink text-center">
+        <router-link to="/login">Login</router-link> |
+        <router-link to="/sign-up">SignUp</router-link>
+      </div>       -->
+      <Login />
+      
       <router-view/>
     </div>    
     <div v-if="this.username!=''">
       <Home/>
     </div>
   </div>
+  </div>
 </template>
 <script>
 import Home from './views/Home.vue'
+import Login from './components/Login.vue'
 
 export default {
   name:'App',
@@ -22,7 +31,7 @@ export default {
     this.username = (localStorage.getItem('username') != null) ? localStorage.getItem('username') : "";
   },
   components:{
-    Home
+    Home, Login
   }
 }
 </script>
