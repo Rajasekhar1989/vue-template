@@ -9,6 +9,8 @@ export default new Vuex.Store({
     hide_tree: false,
     username:'',
     loginUser:true,
+    themeLogo: require("../assets/images/slack.png"),
+
   },
   mounted(){
     if(this.state.loginUser==false){
