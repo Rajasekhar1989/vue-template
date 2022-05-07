@@ -49,6 +49,11 @@ import VueApexCharts from 'vue-apexcharts';
 Vue.use(VueApexCharts);
 Vue.component('apexchart', VueApexCharts);
 
+/* Sidebar */
+import VueSidebarMenu from 'vue-sidebar-menu'
+import 'vue-sidebar-menu/dist/vue-sidebar-menu.css'
+Vue.use(VueSidebarMenu)
+
 export const eventBus = new Vue();
 
 Vue.config.productionTip = false
