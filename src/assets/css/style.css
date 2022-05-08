@@ -1,9 +1,10 @@
+@import "https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,300;1,400&display=swap";
 *{outline:none}
 .imgbox img{height:212px;width:100%}
-body{overflow:hidden;font-size:.8rem!important;font-family:'Georgia'!important;font-weight:600}
+body{overflow:hidden;font-size:.8rem!important;font-family:'Raleway',sans-serif;font-weight:600}
 html,body{height:100%;margin:0;padding:0}
 .navbar{background-color:#066!important}
-.right_pane{background-color:#d8b1cd!important;color:#000!important}
+.right_pane{background-color:#13586b!important;color:#000!important}
 .default_theme{background-color:#0f8a8a!important}
 a{color:#fff}
 .footer{background-color:#3b3939}
@@ -31,19 +32,32 @@ input.form-control:focus{outline:none;box-shadow:none}
 .splitpanes.default_theme .splitpanes__pane.right_pane.hide_tree{width:100%!important}
 .splitpanes.default_theme .splitpanes__pane.tre_pane.hide_tree .scrollbar-track{display:none!important}
 .show_filter .hide_tree .tree_filter{display:none}
-.main{background-color:#f1f1f1}
+.user_log{background-image:url(../images/login-bg.jpg);background-size:cover;background-position:center center;width:100%;height:100%}
 .user_dropdown ul.dropdown-menu{right:0;left:auto}
-.register,.login,.update,.add-detail,.container{text-align:center}
-.register input,.login input,.add input{height:35px;padding-left:0;padding-bottom:0;display:block;margin-right:auto;margin-bottom:20px;margin-left:auto;border:none;border-bottom:1px solid #000;border-radius:0}
-.login{max-width:350px;width:100%;border-radius:5px;margin:0 auto;box-shadow:rgba(99,99,99,0.2) 0 2px 8px 0;padding:20px;background-color:#fff}
+.register,.update,.add-detail{text-align:center}
+.user_log{height:100vh}
+.register input,.add input{height:35px;padding-left:0;padding-bottom:0;display:block;margin-right:auto;margin-bottom:20px;margin-left:auto;border:none;border-bottom:1px solid #000;border-radius:0}
+aside.login-info,aside.login{position:relative;padding-left:8%}
+.main-wrap{background:#fff;max-width:1100px;height:60%;margin:0 auto;top:50%;position:relative;transform:translateY(-50%);border-radius:5px;box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;min-height:440px;max-height:500px}
+.login-inner{position:relative;top:50%;transform:translateY(-50%);width:80%}
+aside.login-info{background-image:url(../images/laptop_bg.jpg);position:relative;background-size:cover;background-repeat:no-repeat;background-position:center center}
+aside.login-info:before{position:absolute;content:"";width:100%;height:100%;top:0;left:0;background-color:rgba(91,79,237,0.9)}
+aside.login-info .login-info-inner{position:absolute;top:50%;transform:translateY(-50%)}
+aside.login-info .login-info-inner h3{color:#fff;font-weight:300;text-transform:uppercase;font-size:14px;line-height:32px;letter-spacing:2px}
+aside.login-info .login-info-inner h3 span{display:block;font-weight:600;font-size:26px;text-transform:capitalize;letter-spacing:4px}
+aside.login-info .login-info-inner p{color:#fff!important;font-weight:300;font-size:16px}
 .login figure img{width:90px;margin-bottom:20px}
 .login .btn{font-size:14px;font-weight:600}
 .navLink{padding:10px}
-.formSubmit span{display:block;float:left}
+.formSubmit span{display:block}
 .formSubmit span a{color:green}
+.formSubmit button{display:flex;align-items:center}
+.formSubmit button box-icon{fill:#fff;margin-right:5px}
 .navLink a{color:#000}
 .form-group{position:relative}
-.formInput{background-color:transparent;border:none;outline:none;width:100%;border-bottom:2px solid #000;color:#000;font-size:1rem;transition:border .2s}
+.form-group + .form-group{margin-top:20px}
+.formInput{position:relative;padding:12px 0 5px;width:100%;outline:0;border:0;box-shadow:0 1px 0 0 #e5e5e5;transition:box-shadow 150ms ease-out;border-bottom:1px solid #a69999;border-radius:0}
 .formInput:focus{border-color:#87ceeb}
-.formLabel{display:block;position:absolute;top:10px;font-size:.8rem;cursor:text;transition:all .2s}
-.formInput:focus ~ .formLabel{position:absolute;top:-6px;font-size:.7rem;transition:all .2s}
+.formLabel{position:absolute;left:0;top:10px;color:#999;background-color:#fff;z-index:10;transition:transform 150ms ease-out,font-size 150ms ease-out}
+.formInput.filled{box-shadow:0 2px 0 0 #90ee90}
+.focused .formLabel{transform:translateY(-115%);font-size:.75em}
